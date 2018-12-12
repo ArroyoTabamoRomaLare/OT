@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Student</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/studrec.css') }}"/>
+
+</head>
+
+<body>
+
+<form method="post" action="/update">
+<center>
+<h1>Update Student</h1>
+
+<table>
+	<tr>
+		<th>Student Number:</th>
+		<th>{{ row['studno'] }}</th>
+	</tr>
+	<tr>
+		<th>First Name:</th>
+		<th><input type="text" name="ufname" value="{{ row['fname'] }}" style="width: 100px"/></th>
+	</tr>
+	<tr>
+		<th>Last Name:</th>
+		<th><input type="text" name="ulname" value="{{ row['lname'] }}" style="width: 100px"/></th>
+	</tr>
+	<tr>
+		<th>Contact:</th>
+		<th><input type="text" name="ucontact" value="{{ row['contact'] }}" style="width: 100px"/></th>
+	</tr>
+	<tr>
+		<th>Gender:</th>
+		<th>{{ row['gender'] }}</th>
+	</tr>
+	<tr>
+		<th>Birthday:</th>
+		<th>{{ row['bday'] }}</th>
+	</tr>
+	<tr>
+		<th>Progam:</th>
+		<th><input type="text" name="uprogram" value="{{ row['program'] }}" style="width: 100px"/></th>
+	</tr>
+</table>
+<input name="id" value="{{ row['stud_id'] }}" type="hidden">
+
+<input type = "submit" class="home" value="Update">
+<button><a href = "{{ url_for('.index') }}">Back to Homepage</a></button>
+</center>
+</form>
+</body>
+</html>

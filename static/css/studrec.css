@@ -1,0 +1,56 @@
+body {
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 70px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #343030;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+button{
+    margin: 25px;
+    background-color: transparent;
+    background- position: center;
+    border-radius: 30px;
+}
+
+input[type=text]{
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select{
+    margin-left: 10px;
+    width: 150px;
+}
+div.text{
+    text-indent: 33%;
+}
+div.contact{
+    text-indent: 33%;
+}
+div.gender{
+    text-indent: 33%;
+}
+div.bday{
+    text-indent: 33%;
+}
+input[type=year] {
+    width: 5%;
+}
+div.studno{
+    text-indent: 33%;
+}
+div.home{
+    text-indent: 42%;
+}

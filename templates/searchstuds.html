@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search Student</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/studrec.css') }}"/>
+</head>
+<body>
+	<center>
+		<h1>Search Student</h1>
+		<form method="post" action="/searchbyfname">
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="fname"></td>
+					<td><input type="submit" name="Search"></td>
+				</tr>
+			</table>
+		</form>
+		<form method="post" action="/searchbylname">
+			<table>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lname"></td>
+					<td><input type="submit" name="Search"></td>
+				</tr>
+			</table>
+		</form>
+		<form method="post" action="/searchbystudno">
+			<table>
+				<tr>
+					<td>Student No.:</td>
+					<td><input type="text" name="studno"></td>
+					<td><input type="submit" name="Search"></td>
+				</tr>
+			</table>
+		</form>
+{{table}}
+		<button>
+			<a href="{{ url_for('.index') }}">Back to Hompage</a>
+		</button>
+	</center>
+</body>
+</html>
